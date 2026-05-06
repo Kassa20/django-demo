@@ -11,3 +11,6 @@ def home(request):
         output += msg.text + "<br>"
     
     return HttpResponse(output)
+
+def about(request):
+    return render(request, 'main/about.html')
